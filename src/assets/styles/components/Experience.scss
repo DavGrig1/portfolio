@@ -1,0 +1,64 @@
+@use '../abstracts/colors' as *;
+
+.experience {
+	margin-top: 20rem;
+
+	.title {
+		display: inline;
+		border-bottom: 2px solid $primaryMain;
+	}
+
+	.comment {
+		margin-top: .5rem;
+		color: $secondaryFont;
+	}
+
+	.imgContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap: 1rem;
+		margin-top: 2rem;
+		:hover {
+				transform: scale(110%);
+		}
+	}
+
+	.imageGrid {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem;
+		box-shadow: 1px -6px 10px black;
+		transition: all .3s ease;
+		:hover {
+			transform: none;
+		}
+		.image {
+			width: 4rem;
+		}
+
+		p {
+			cursor: default;
+		}
+	}
+}
+
+
+@media (max-width: 800px) {
+	.experience{
+		.imgContainer {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.experience{
+		.imgContainer {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}

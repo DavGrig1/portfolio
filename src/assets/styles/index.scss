@@ -1,0 +1,46 @@
+@use 'abstracts/colors' as *;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: $background;
+	color: $primaryFont;
+	font-size: calc(10px + 2vmin);
+
+	h2 {
+		font-size: clamp(1.5rem, 4vw, 2.5rem);
+	}
+
+	p {
+		font-size: clamp(.7rem, 2vw, 1.2rem);
+	}
+
+	.experience,
+	.aboutContainer,
+	.header,
+	.workContainer,
+	.contactContainer {
+		margin-top: 25rem;
+	}
+
+	
+	@media (max-width: 900px) {
+		.experience,
+		.aboutContainer,
+		.header,
+		.workContainer,
+		.contactContainer {
+			margin: 25rem 1rem 0;
+		}
+	}
+}
+
+.appContainer {
+	max-width: 800px;
+	margin: auto;
+}

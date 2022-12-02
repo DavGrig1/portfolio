@@ -1,0 +1,77 @@
+@use '../abstracts/colors' as *;
+
+.navbar {
+	display: flex;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: $background;
+	justify-content: space-between;
+	align-items: center;
+	height: 4rem;
+	padding: .5rem;
+	color: $primaryFont;
+		.logo {
+			font-family: 'Courgette', cursive;
+			color: $primaryMain;
+			cursor: pointer;
+		}
+		.links {
+			display: flex;
+			font-size: calc(10px + 1vmin);
+			gap: 1rem;
+			list-style: none;
+			.active {
+				border-bottom: 2px solid $primaryMain;
+			}
+			li {
+				cursor: pointer;
+			}
+		}
+}
+
+.menuBurger, .menuBurgerX {
+	display: none;
+}
+
+@media (max-width: 600px) {
+
+	.linksContainer {
+		transform: translateX(200px);
+		position: fixed;
+		overflow: auto;
+		top: 0;
+		right: 0;
+		width: 200px;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		.links {
+			flex-direction: column;
+			width: 100%;
+			align-items: flex-end;
+			font-size: 2rem;
+			padding-right: .7rem;
+			margin-top: 4rem;
+			.active {
+				border-bottom: none;
+			}
+		}
+		transition: transform .3s ease 0s;
+	}
+	
+	.linksContainer.open {
+		transform: translateX(0);
+		transition: transform .3s ease;
+	}
+
+	.menuBurger,
+	.menuBurgerX {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		right: 1rem;
+		top: 1rem;
+		font-size: 2rem;
+	}
+
+}

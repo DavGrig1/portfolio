@@ -1,0 +1,37 @@
+@use '../abstracts/colors' as *;
+
+.aboutContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 1rem;
+	margin-top: 20rem;
+
+	.left {
+		display: flex;
+		flex-direction: column;
+		gap: .5rem;
+		align-items: flex-end;
+		text-align: end;
+	}
+	.title {
+		border-bottom: 2px solid $primaryMain;
+	}
+	.right {
+		display: flex;
+		align-items: flex-end;
+	}
+
+}
+
+@media (max-width: 800px) {
+	.aboutContainer {
+		grid-template-columns: 1fr;
+		.left {
+			align-items: center;
+			text-align: center;
+		}
+		.right {
+			text-align: center;
+		}
+	}
+}
