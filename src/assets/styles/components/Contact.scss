@@ -57,24 +57,15 @@
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
 	.contactContainer {
+		padding: 0 2rem;
 		.collaborateForm {
 			width: 50%;
 		}
 	}
 }
 
-@media (max-width: 950px) {
-	.contactContainer {
-		.contacts {
-			width: 60%;
-		}
-		.collaborateForm {
-			width: 40%;
-		}
-	}
-}
 @media (max-width: 800px) {
 	.contactContainer {
 		padding: 0;

@@ -20,9 +20,9 @@ const Contact = () => {
 		 method='POST' 
 		 action='https://getform.io/f/052b7592-31de-41e3-83d4-a65efd6e302a' 
 		 className='collaborateForm'>
-			<input type="text" name="name" className='nameField' placeholder='Name'/>
-			<input type="email" name="email" className='mailField' placeholder='Mail'/>
-			<textarea className='textField' name='message'/>
+			<input type="text" name="name" className='nameField' placeholder='Name' required/>
+			<input type="email" name="email" datatype='mailField' className='mailField' placeholder='Mail' required/>
+			<textarea className='textField' name='message' required/>
 			<button>Lets Collaborate</button>
 		</form>
 
