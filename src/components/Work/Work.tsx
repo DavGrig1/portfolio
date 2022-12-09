@@ -1,5 +1,6 @@
 import '../../assets/styles/components/Work.scss'
-import first from '../../assets/images/Ltemplate.png'
+import first from '../../assets/images/countriesApp.png'
+import third from '../../assets/images/Ltemplate.png'
 import second from '../../assets/images/template.png'
 import React from 'react'
 
@@ -7,6 +8,8 @@ const lTemplateCode = 'https://github.com/DavGrig1/landing-template-for-startups
 const lTemplateDemo = 'https://davgrig1.github.io/landing-template-for-startups/'
 const templateCode = 'https://github.com/DavGrig1/cloud-management'
 const templateDemo = 'https://davgrig1.github.io/cloud-management/'
+const countriesAppCode = 'https://github.com/DavGrig1/countriesApp'
+const countriesAppDemo = 'https://davgrig1.github.io/countriesApp/'
 
 const Work = () => {
 
@@ -20,12 +23,12 @@ const Work = () => {
 				<img src={first} alt="/" />
 
 				<div className='buttons'>
-					<button onClick={() => window.open(lTemplateCode, '_blank')}
+					<button onClick={() => window.open(countriesAppCode, '_blank')}
 					 className='codeBtn'>
 						Code
 					</button>
 					
-					<button onClick={() => window.open(lTemplateDemo, '_blank')}
+					<button onClick={() => window.open(countriesAppDemo, '_blank')}
 					 className='demoBtn'>
 						Demo
 					</button>
@@ -42,6 +45,21 @@ const Work = () => {
 					</button>
 
 					<button onClick={() => window.open(templateDemo, '_blank')}
+					 className='demoBtn'>
+						Demo
+					</button>
+				</div>
+			</div>
+			<div className='gridItem'>
+				<img src={third} alt="/" />
+
+				<div className='buttons'>
+					<button onClick={() => window.open(lTemplateCode, '_blank')}
+					 className='codeBtn'>
+						Code
+					</button>
+
+					<button onClick={() => window.open(lTemplateDemo, '_blank')}
 					 className='demoBtn'>
 						Demo
 					</button>
